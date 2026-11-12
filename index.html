@@ -1,19 +1,10 @@
 <!DOCTYPE html>
-<!-- DOCTYPE tells the browser this is a modern HTML5 document -->
 <html lang="en">
-<!-- <html> is the root element; lang="en" tells browsers and screen readers the page is in English -->
-
 <head>
-  <!-- <head> holds information ABOUT the page; it is not shown as page content -->
   <meta charset="UTF-8">
-  <!-- UTF-8 encoding lets Hungarian accents (é, á, ő) display correctly -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- viewport makes the page scale properly on mobile phones -->
-  <title>Péter Dzama-Demjén – Personal Page</title>
-  <!-- <title> is the text shown on the browser tab -->
-
+  <title>Péter Dzama-Demjén</title>
   <style>
-    /* <style> contains CSS, which controls how the HTML looks */
     body {
       font-family: "Segoe UI", Arial, sans-serif;
       background: #f4f6f9;
@@ -23,117 +14,92 @@
     }
     header {
       background: #1e4d8c;
-      color: #ffffff;
+      color: #fff;
       text-align: center;
       padding: 40px 16px 32px;
     }
     header img {
       width: 160px;
       height: 160px;
-      object-fit: cover;
-      object-position: top;
       border-radius: 50%;
-      border: 4px solid #ffffff;
+      border: 4px solid #fff;
     }
     header h1 { margin: 16px 0 4px; }
-    header p { margin: 0; opacity: 0.9; }
+    header p { margin: 0; }
     main {
       max-width: 720px;
       margin: 0 auto;
       padding: 16px;
     }
     section {
-      background: #ffffff;
+      background: #fff;
       border-radius: 8px;
       padding: 20px 24px;
       margin: 16px 0;
-      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
     }
     h2 { color: #1e4d8c; margin-top: 0; }
+    a { color: #1e4d8c; }
     footer {
       text-align: center;
-      font-size: 0.9em;
       color: #6b7280;
       padding: 24px 16px;
     }
-    a { color: #1e4d8c; }
   </style>
 </head>
-
 <body>
-  <!-- <body> holds everything the visitor actually sees -->
 
   <header>
-    <!-- <header> is the introductory block at the top of the page -->
-    <img src="images/profile.jpg" alt="Portrait of Péter Dzama-Demjén">
-    <!-- <img> shows an image; src is the file path, alt is the text read aloud or shown if the image fails -->
+    <img src="images/profile.jpg" alt="Péter Dzama-Demjén">
     <h1>Péter Dzama-Demjén</h1>
-    <!-- <h1> is the most important heading; a page should have only one -->
-    <p>Economist · Product Owner · Community Organiser</p>
-    <!-- <p> is a paragraph of text -->
+    <p>Product Owner · Community Organiser</p>
   </header>
 
   <main>
-    <!-- <main> wraps the primary content of the page -->
-
     <section>
-      <!-- <section> groups related content under one heading -->
       <h2>Studies</h2>
-      <!-- <h2> is a second-level heading, one level below <h1> -->
       <ul>
-        <!-- <ul> is an unordered (bulleted) list; each <li> is one item -->
         <li><strong>University:</strong> Corvinus University of Budapest</li>
-        <!-- <strong> marks text as important; browsers show it in bold -->
-        <li><strong>Program:</strong> Digital Innovation MSc (ongoing)</li>
-        <li><strong>Year of study:</strong> 1st year</li>
+        <li><strong>Program:</strong> Digital Innovation MSc</li>
+        <li><strong>Year:</strong> 1st year</li>
         <li><strong>Previous degree:</strong> Business Administration BSc</li>
       </ul>
     </section>
 
     <section>
-      <h2>About Me</h2>
+      <h2>About me</h2>
       <p>
-        I am a young economist, product owner and community organiser. I earned my
-        Business Administration degree at Corvinus University of Budapest and gained
-        professional experience in the automotive industry, the banking sector and as
-        a self-employed entrepreneur.
+        I'm a product owner and community organiser. I finished my Business Administration
+        degree at Corvinus, then worked in the automotive industry, in banking and as a
+        self-employed entrepreneur.
       </p>
       <p>
-        Civil society and advocacy have been part of my life since childhood. Today I am
-        the president of the <em>KözCampus Egyesület</em> (KözCampus Association) and work as a
-        constituency coordinator. Now I am continuing my studies in the Digital Innovation
-        master's program to combine business thinking with modern technology.
+        I've been involved in civil society since I was a kid. Today I'm the president of
+        the KözCampus Association and work as a constituency coordinator. Now I'm back at
+        Corvinus for the Digital Innovation master's.
       </p>
-      <!-- <em> adds emphasis; browsers show it in italics -->
     </section>
 
     <section>
       <h2>Hobbies</h2>
-      <ol>
-        <!-- <ol> is an ordered (numbered) list -->
-        <li>Community organising and volunteering with KözCampus</li>
+      <ul>
+        <li>Community organising with KözCampus</li>
         <li>Public affairs and local politics</li>
-        <li>Entrepreneurship and building new products</li>
-        <li>Exploring digital innovation and AI tools</li>
-      </ol>
+        <li>Building new products</li>
+        <li>Trying out new digital and AI tools</li>
+      </ul>
     </section>
 
     <section>
       <h2>Contact</h2>
       <p>
-        Visit my website: <a href="https://dzama.hu" target="_blank">dzama.hu</a>
-        <!-- <a> creates a link; href is the destination, target="_blank" opens it in a new tab -->
-        <br>
-        <!-- <br> forces a line break (it has no closing tag) -->
-        GitHub: <a href="https://github.com/dzama-peter" target="_blank">dzama-peter</a>
+        Website: <a href="https://dzama.hu">dzama.hu</a><br>
+        GitHub: <a href="https://github.com/dzama-peter">dzama-peter</a>
       </p>
     </section>
   </main>
 
   <footer>
-    <!-- <footer> is the closing block at the bottom of the page -->
-    <p>&copy; 2026 Péter Dzama-Demjén · Corvinus University · DevOps &amp; AI Onboarding homework</p>
-    <!-- &copy; and &amp; are HTML entities: special codes for the © and & characters -->
+    <p>&copy; 2026 Péter Dzama-Demjén</p>
   </footer>
 
 </body>
